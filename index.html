@@ -1,109 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon — Muse.ByMax</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coming Soon</title>
 
-  <style>
-    /* ---------- GLOBAL ---------- */
+<!-- Font: Cormorant Garamond (как на musebymax.com/password) -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
     body {
-      margin: 0;
-      background: #000000;
-      color: #CCCCCC;
-      font-family: Arial, Helvetica, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 20px;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        font-family: 'Cormorant Garamond', serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 
-    .container {
-      max-width: 600px;
-      width: 100%;
+    img.logo {
+        width: 180px;
+        max-width: 60%;
+        margin-bottom: 30px;
     }
 
-    /* ---------- LOGO ---------- */
-    .logo-img {
-      width: 160px;     /* можно изменить */
-      height: auto;
-      display: block;
-      margin: 0 auto 40px;
-      /* Рамка — хочешь оставь, хочешь убери */
-      border: 2px solid #6A0F1A;
-      padding: 10px;
-      border-radius: 50%; /* убери, если не нужен круг */
-    }
-
-    /* ---------- TEXT ---------- */
     h1 {
-      color: #6A0F1A; /* maroon */
-      font-size: 48px;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+        font-size: 32px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin: 0;
     }
 
     p {
-      font-size: 20px;
-      line-height: 1.4;
-      margin-bottom: 30px;
+        margin-top: 12px;
+        font-size: 18px;
+        color: #cccccc;
     }
-
-    /* ---------- INPUT ---------- */
-    input[type="email"] {
-      width: 100%;
-      max-width: 350px;
-      padding: 14px;
-      border: 1px solid #6A0F1A;
-      background: #000;
-      color: #CCCCCC;
-      border-radius: 4px;
-      margin-bottom: 15px;
-      font-size: 16px;
-    }
-
-    input::placeholder {
-      color: #777777;
-    }
-
-    /* ---------- BUTTON ---------- */
-    button {
-      padding: 14px 24px;
-      border: 1px solid #6A0F1A;
-      background: transparent;
-      color: #6A0F1A;
-      cursor: pointer;
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    button:hover {
-      opacity: 0.8;
-    }
-  </style>
+</style>
 </head>
-
 <body>
-  <div class="container">
 
-    <!-- LOGO — просто замени путь -->
-<img src="assets/logo-img.jpg" alt="Logo" />
+    <!-- Logo -->
+    <img src="assets/logo-img.jpg" alt="Logo" class="logo">
 
+    <!-- Text -->
     <h1>Coming Soon</h1>
+    <p>We are building something new.</p>
 
-    <p>We’re working on something special.<br>
-    The new site will be live soon.</p>
-
-    <form onsubmit="alert('Thank you!'); return false;">
-      <input type="email" placeholder="Your email address" required />
-      <br>
-      <button type="submit">Notify Me</button>
-    </form>
-
-  </div>
 </body>
 </html>
